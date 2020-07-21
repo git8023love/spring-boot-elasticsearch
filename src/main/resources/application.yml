@@ -1,0 +1,15 @@
+server:
+  port: 8899
+spring:
+  application:
+    name: spring-boot-elasticsearch
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/i4android?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: i4$2017#0217
+    type: org.apache.tomcat.jdbc.pool.DataSource
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
