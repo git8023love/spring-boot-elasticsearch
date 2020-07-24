@@ -5,7 +5,7 @@ spring:
     name: spring-boot-elasticsearch
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/i4android?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.1.43:3306/i4android?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
     username: root
     password: i4$2017#0217
     type: org.apache.tomcat.jdbc.pool.DataSource
@@ -49,5 +49,8 @@ spring:
       concurrency: 5
       # listner负责ack，每调用一次，就立即commit
       ack-mode: manual_immediate
+zookeeper:
+  address: 127.0.0.1:2181
+  timeout: 20000
 
 
